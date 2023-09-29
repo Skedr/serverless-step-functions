@@ -237,7 +237,7 @@ interface Pass extends StateBase {
     | string
     | []
     | {
-        [key: string]: string | Array<unknown> | { [key: string]: string };
+        [key: string]: string | Array<unknown> | null | { [key: string]: string };
       };
   ResultPath?: string;
 }
