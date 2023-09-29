@@ -239,7 +239,7 @@ interface Pass extends StateBase {
     | {
         [key: string]: string | Array<unknown> | null | { [key: string]: string };
       };
-  ResultPath?: string;
+  ResultPath?: string | null;
 }
 
 interface Parallel extends StateBase {
