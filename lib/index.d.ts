@@ -26,7 +26,7 @@ export type StateMachine = {
   useExactVersion?: boolean;
 };
 
-type LoggingConfig = {
+export type LoggingConfig = {
   level: "ERROR" | "ALL" | "FATAL" | "OFF";
   includeExecutionData: boolean;
   destinations: Resource | Resource[];
