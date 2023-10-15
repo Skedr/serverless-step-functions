@@ -231,7 +231,7 @@ interface Task extends StateBase {
 interface Pass extends StateBase {
   Type: "Pass";
   Parameters?: {
-    [key: string]: string | Array<unknown> | { [key: string]: string };
+    [key: string]: string | number | Array<unknown> | { [key: string]: string | { [key: string]: string } };
   };
   Result?:
     | string
