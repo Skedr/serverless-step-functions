@@ -88,7 +88,7 @@ type StateBase = {
 };
 
 type ChoiceRuleComparison = {
-  Variable: string;
+  Variable?: string;
   BooleanEquals?: boolean;
   BooleanEqualsPath?: string;
   IsBoolean?: boolean;
@@ -128,6 +128,8 @@ type ChoiceRuleComparison = {
   TimestampLessThanPath?: string;
   TimestampLessThanEquals?: string;
   TimestampLessThanEqualsPath?: string;
+  And?: ChoiceRuleComparison[];
+  Not?: ChoiceRuleComparison;
 };
 
 type ChoiceRuleNot = {
@@ -231,7 +233,7 @@ interface Task extends StateBase {
 interface Pass extends StateBase {
   Type: "Pass";
   Parameters?: {
-    [key: string]: string | number | Array<unknown> | { [key: string]: string | { [key: string]: string } };
+    [key: string]: string | number | Array<unknown> | object | { [key: string]: string | { [key: string]: string } };
   };
   Result?:
     | string
