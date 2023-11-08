@@ -82,7 +82,7 @@ type StateBase = {
   Next?: string;
   OutputPath?: string;
   ResultPath?: string | null;
-  ResultSelector?: { [key: string]: string | { [key: string]: string } };
+  ResultSelector?: { [key: string]: string | number | { [key: string]: string } };
   Type: string;
   Comment?: string;
 };
@@ -237,6 +237,7 @@ interface Pass extends StateBase {
   };
   Result?:
     | string
+    | object
     | []
     | {
         [key: string]: string | Array<unknown> | null | { [key: string]: string };
