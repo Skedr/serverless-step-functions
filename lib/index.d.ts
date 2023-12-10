@@ -171,6 +171,7 @@ interface Fail extends StateBase {
   Type: "Fail";
   Cause?: string;
   Error?: string;
+  ErrorPath?: string;
 }
 
 interface Map extends StateBase {
