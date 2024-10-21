@@ -1,6 +1,6 @@
 {
-  "name": "serverless-step-functions",
-  "version": "3.11.1",
+  "name": "@skedr/serverless-step-functions",
+  "version": "3.11.2",
   "description": "The module is AWS Step Functions plugin for Serverless Framework",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/horike37/serverless-step-functions.git"
+    "url": "https://github.com/skedr/serverless-step-functions.git"
   },
   "keywords": [
     "serverless"
@@ -20,9 +20,9 @@
   "author": "horike37",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/horike37/serverless-step-functions/issues"
+    "url": "https://github.com/skedr/serverless-step-functions/issues"
   },
-  "homepage": "https://github.com/horike37/serverless-step-functions#readme",
+  "homepage": "https://github.com/skedr/serverless-step-functions#readme",
   "devDependencies": {
     "@commitlint/cli": "^17.6.1",
     "@commitlint/config-conventional": "^15.0.0",
