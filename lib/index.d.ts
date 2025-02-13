@@ -24,6 +24,7 @@ export type StateMachine = {
   events?: any[];
   dependsOn?: string | string[];
   useExactVersion?: boolean;
+  tags?: Record<string, string>;
 };
 
 export type LoggingConfig = {

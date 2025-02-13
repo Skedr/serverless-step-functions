@@ -1,6 +1,6 @@
 {
   "name": "@skedr/serverless-step-functions",
-  "version": "3.11.5",
+  "version": "3.11.6",
   "description": "The module is AWS Step Functions plugin for Serverless Framework",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
